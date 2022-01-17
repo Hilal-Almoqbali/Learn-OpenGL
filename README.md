@@ -1,2 +1,2 @@
 # Learn-OpenGL
-my simple learning opengl notes
+my simple learning opengl [notes](https://hilal-almoqbali.github.io/Learn-OpenGL/)
