@@ -1,8 +1,8 @@
 # OpenGL Notes
-- Creating a window 
-- Drawing polygons
-- Shaders
-- Textures
+- [Creating a window](#creating-a-window) 
+- [Drawing polygons]()
+- [Shaders]()
+- [Textures]()
 
 ----
 ## Creating a window:
@@ -33,6 +33,7 @@ int main(void)
     glfwMakeContextCurrent(window);
 
     /* Loop until the user closes the window */
+    //draw functions on this loop
     while (!glfwWindowShouldClose(window))
     {
         /* Render here */
