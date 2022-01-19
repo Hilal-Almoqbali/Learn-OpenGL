@@ -1,19 +1,22 @@
 
 # OpenGL Notes
-- [Creating a window](#creating-a-window) 
-- [Drawing polygons]()
+
+- [Creating a Window](#creating-a-window)
+- [Vertex Buffers and Drawing Polygons]()
 - [Shaders]()
 - [Textures]()
 
 ----
-## Creating a window:
+## 1. Creating a window:
 
 
 [Example code for a window](https://www.glfw.org/documentation.html)
 
 ``` cpp
-#include <GLFW/glfw3.h>
+#include <GLFW/glfw3.h> // link your librarie
+```
 
+```cpp
 int main(void)
 {
     GLFWwindow* window;
@@ -52,3 +55,13 @@ int main(void)
 }
 ```
 For more details [GLFW](https://www.glfw.org/docs/latest/window_guide.html)
+
+
+----
+## 2. Vertex Buffers and Drawing Polygons:
+
+Vertex Buffers are a string of data that saved on the vram and draws by a draw command.
+
+![Vertex Buffers](https://learnopengl.com/img/getting-started/pipeline.png)
+
+
