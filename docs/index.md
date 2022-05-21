@@ -64,5 +64,4 @@ Vertex Buffers are a string of data that saved on the vram and draws by a draw c
 
 ![Vertex Buffers](https://learnopengl.com/img/getting-started/pipeline.png)
 
-<iframe src="../src/Vertex Buffers and Drawing Polygons/Vertex Buffers and Drawing Polygons.cc" width=800 height=400 frameborder=1 ></iframe>
 
