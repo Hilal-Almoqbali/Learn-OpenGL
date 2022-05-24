@@ -1,6 +1,10 @@
 
 # OpenGL Notes
+---- 
+[2d draw](2D.md) </br>
+[3d draw](3d.md)
 
+----
 - [Creating a Window](#creating-a-window)
 - [Vertex Buffers and Drawing Polygons]()
 - [Shaders]()
@@ -63,5 +67,6 @@ For more details [GLFW](https://www.glfw.org/docs/latest/window_guide.html)
 Vertex Buffers are a string of data that saved on the vram and draws by a draw command.
 
 ![Vertex Buffers](https://learnopengl.com/img/getting-started/pipeline.png)
+
 
 
