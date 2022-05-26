@@ -10,7 +10,8 @@ class mw
 public:
     int SCR_WIDTH;
     int SCR_HEIGHT;
-    void mmw(){
+    
+    int mmw(){
 
     // glfw: initialize and configure
     // ------------------------------
@@ -28,7 +29,7 @@ public:
     {
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
-        //return -1;
+        return -1;
     }
     glfwMakeContextCurrent(window);
     //glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);

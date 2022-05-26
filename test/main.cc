@@ -13,14 +13,14 @@ int main()
 
 
 
-mw window;
+mw mtw;
 render renders;
 
 
-window.SCR_WIDTH = 800;
-window.SCR_HEIGHT = 600;
-window.mmw();
-renders.window = window.window
+mtw.SCR_WIDTH = 800;
+mtw.SCR_HEIGHT = 600;
+mtw.mmw();
+renders.window = mtw.GLFWwindow window;
 
 renders.main();
 
