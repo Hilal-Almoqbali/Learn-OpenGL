@@ -14,10 +14,14 @@ int main()
 
 
 mw window;
+render renders;
+
+
 window.SCR_WIDTH = 800;
 window.SCR_HEIGHT = 600;
 window.mmw();
+renders.window = window.window
 
-
+renders.main();
 
 }

@@ -10,7 +10,7 @@ class mw
 public:
     int SCR_WIDTH;
     int SCR_HEIGHT;
-    int mmw(){
+    void mmw(){
 
     // glfw: initialize and configure
     // ------------------------------
