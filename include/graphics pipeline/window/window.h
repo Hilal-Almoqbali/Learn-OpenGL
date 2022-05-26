@@ -5,9 +5,13 @@
 #include <cmath>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
-
-int window(int SCR_WIDTH, int SCR_HEIGHT )
+class mw
 {
+public:
+    int SCR_WIDTH;
+    int SCR_HEIGHT;
+    int mmw(){
+
     // glfw: initialize and configure
     // ------------------------------
     glfwInit();
@@ -27,20 +31,20 @@ int window(int SCR_WIDTH, int SCR_HEIGHT )
         //return -1;
     }
     glfwMakeContextCurrent(window);
-    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+    //glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
     // glad: load all OpenGL function pointers
     // ---------------------------------------
-    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
-    {
-        std::cout << "Failed to initialize GLAD" << std::endl;
+   // if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
+   // {
+        //std::cout << "Failed to initialize GLAD" << std::endl;
         //return -1;
+   // }
+
+
     }
 
-
-
-
-}
+private:
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
@@ -48,3 +52,5 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
     // height will be significantly larger than specified on retina displays.
     glViewport(0, 0, width, height);
 }
+
+};

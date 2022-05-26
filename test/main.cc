@@ -1,26 +1,23 @@
 #include<graphics pipeline/all.h>
 
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
+
+#include <iostream>
+#include <cmath>
+
 int main()
 {
 
-window(800,600);
 
- // render loop
-    // -----------
-    while (!glfwWindowShouldClose(window))
-    {
-        // input
-        // -----
-        processInput(window);
 
-        // render
-        // ------
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
 
-        //---------------------------------------------------
-        glfwSwapBuffers(window);
-        glfwPollEvents();
-    }
+
+mw window;
+window.SCR_WIDTH = 800;
+window.SCR_HEIGHT = 600;
+window.mmw();
+
+
 
 }
