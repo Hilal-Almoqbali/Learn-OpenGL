@@ -11,7 +11,7 @@ static unsigned int CreatShadder(const std::string &VertexShadder, const std::st
 
 
 std::string vertexShadder =
-    "#version 130 core \n"
+    "#version 330 core \n"
     "\n"
     "layout(location = 0) in vec4 postions;\n"
     "void main()\n"
@@ -20,7 +20,7 @@ std::string vertexShadder =
     "}\n\0";
 
 std::string fragmentShadder =
-    "#version 130 core \n"
+    "#version 330 core \n"
     "\n"
     "layout(location = 0) out vec4 color;\n"
     "void main()\n"
