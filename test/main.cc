@@ -11,22 +11,22 @@ static unsigned int CreatShadder(const std::string &VertexShadder, const std::st
 
 
 std::string vertexShadder =
-"#version 330 core \n"
-"\n"
-"layout(location = 0) in vec4 postions;\n"
-"void main()\n"
-"{\n"
-"gl_Position = postions;\n"
-"}\n";
+    "#version 130 core \n"
+    "\n"
+    "layout(location = 0) in vec4 postions;\n"
+    "void main()\n"
+    "{\n"
+    "gl_Position = postions;\n"
+    "}\n\0";
 
 std::string fragmentShadder =
-"#version 330 core \n"
-"\n"
-"layout(location = 0) out vec4 color;\n"
-"void main()\n"
-"{\n"
-"color = vec4(1.0,0.0,0.0,1.0);\n"
-"}\n";
+    "#version 130 core \n"
+    "\n"
+    "layout(location = 0) out vec4 color;\n"
+    "void main()\n"
+    "{\n"
+    "color = vec4(1.0,0.0,0.0,1.0);\n"
+    "}\n\0";
 
 int main(void)
 {
@@ -34,7 +34,10 @@ int main(void)
 
     /* Initialize the library */
     if (!glfwInit())
-        return -1;
+        {return -1;}
+
+
+
 
     /* Create a windowed mode window and its OpenGL context */
     window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
