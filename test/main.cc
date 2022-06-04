@@ -16,7 +16,7 @@ std::string vertexShadder =
     "layout(location = 0) in vec4 postions;\n"
     "void main()\n"
     "{\n"
-    "gl_Position = postions;\n"
+    "gl_Position = vec4(postions);\n"
     "}\n\0";
 
 std::string fragmentShadder =
@@ -46,6 +46,12 @@ int main(void)
         glfwTerminate();
         return -1;
     }
+        // ---------------------------------------
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
+    {
+        std::cout << "Failed to initialize GLAD" << std::endl;
+        return -1;
+    }
 
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
@@ -73,7 +79,6 @@ int main(void)
     //Vertex Attributes
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0,2,GL_FLOAT,GL_FALSE,sizeof(float)*2,0);//tell OpenGL the buffer's layout
-
 
     glBindBuffer(GL_ARRAY_BUFFER,0);//select the type of the buffer and useing it
 
@@ -111,7 +116,7 @@ static unsigned int CompileShadder(unsigned int type,const std::string &source)
 {
     unsigned int id = glCreateShader(type);
     const char* src = source.c_str();// get a C pointer to the C++ string
-    glShaderSource(id,1,&src,nullptr);
+    glShaderSource(id,1,&src,NULL);
     glCompileShader(id);
 
     int result;
