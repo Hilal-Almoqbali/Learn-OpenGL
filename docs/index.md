@@ -1,9 +1,5 @@
 
 # OpenGL Notes
----- 
-[2d draw](2D.md) </br>
-[3d draw](3d.md)
-
 ----
 - [Creating a Window](#creating-a-window)
 - [Vertex Buffers and Drawing Polygons]()
